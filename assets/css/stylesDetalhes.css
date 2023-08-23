@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Poppins:wght@100;200&family=Roboto:wght@100;300;400;500;700&family=Tilt+Prism&display=swap');
+*{
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.content{
+    padding: 1rem;
+    margin: 0 auto;
+    width: 400px;
+    height: 100vh;
+    background-color: #366b8d;
+}
+
+#abilitiesList{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+#abilitiesList img{
+    width: 100%;
+    height: 281px;
+    margin-bottom: 1rem;
+
+    animation-name: floating;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+
+}
+@keyframes floating {
+    0% { transform: translate(0,  0px); }
+    50%  { transform: translate(0, 15px); }
+    100%   { transform: translate(0, -0px); }   
+}
+
+
+#abilitiesList .habilidades{
+    
+    background: aliceblue;
+    height: 310px;
+    color: black;
+    margin: 0.5rem;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+progress {
+    width: 100%;
+    height: 20px; /* Altura desejada da barra de progresso */
+    border: 1px solid #ccc; /* Borda da barra de progresso */
+    border-radius: 4px; /* Cantos arredondados */
+}
+
+/* Estilo para a barra de preenchimento */
+progress::-webkit-progress-value {
+    background-color: #4CAF50; /* Cor do preenchimento da barra de progresso */
+    border-radius: 4px; /* Cantos arredondados */
+}
+
+.nome{
+    font-size: 2rem;
+    color: rgb(255, 255, 255);
+}
+.btn{
+    background: #4CAF50;
+    padding: .5rem;
+    border: none;
+    border-radius: 20%;
+    cursor: pointer;
+    color: white;
+    padding: .7 .1rem;
+    font-size: 2rem;
+    margin-bottom: .5rem;
+    
+}
+.hab {
+    display: flex;
+    margin-bottom: 1rem;
+    background-color: #a5f2cd;
+    padding: .3rem;
+    border-radius: 10px;
+    text-align: center;
+    justify-content: center;
+}
+
+
+.hab span{
+    font-weight: bold;
+    margin-right: 5px;
+}
+.hab progress{
+    margin-left: .5rem;
+}
+
+.hab p{
+    display: inline;
+}
+
+.prog{
+   display: flex;
+   flex-direction: column;
+}
