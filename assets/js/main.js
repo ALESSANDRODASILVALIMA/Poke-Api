@@ -81,7 +81,7 @@ pokeApi.getPokemons(offset, limit).then((listaPokemon = []) => {
 }
 loadMoreButton.addEventListener('click', ()=>{
 
-    if(offset_novo < 6){
+    if(offset_novo < 120){
         offset_novo  = offset_novo + limit;
         limit_novo =+  6;
         loadPokemonItens(offset_novo, limit_novo);
